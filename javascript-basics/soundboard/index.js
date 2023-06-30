@@ -22,10 +22,18 @@ function test(ev) {
   const audio = document.querySelector(`audio[code="${id}"]`);
   audio.currentTime = 0;
   audio.play();
+  let a = 0;
+  for(let i = 0; i < 1000000; i++) {
+    a+=1;
+  }
+  console.log(audio.currentTime);
   ct.classList.add('playing');
-  setTimeout(() => {
+  let tid = setTimeout(() => {
     ct.classList.remove('playing');
   }, audio.duration*1000);
+
+
+
 }
 
 
