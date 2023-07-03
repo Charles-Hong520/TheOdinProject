@@ -1,0 +1,33 @@
+h1 {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.container {
+  display: block;
+}
+
+.EAS {
+  margin: auto;
+  width: 512px;
+  aspect-ratio: 1/1;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.grid {
+  flex: 1;
+}
+
+.color-grid {
+  background-color: black;
+}
