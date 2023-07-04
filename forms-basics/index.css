@@ -1,0 +1,114 @@
+:root {
+  --form-padding-left: 12px;
+}
+div, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.picture {
+  flex: 2;
+  overflow: hidden;
+  position: relative;
+}
+
+.picture img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blackbar {
+  height: 20%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blackbar img {
+  height: 70%;
+  object-fit:cover;
+}
+
+.imagecred {
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagecred a, .imagecred a:visited {
+  a, a:visited {
+    color: white;
+  }
+}
+
+.imagecred span {
+  margin: 0px 3px;
+}
+
+
+
+.form {
+  flex: 3;
+  background-color: rgb(238, 238, 238);
+}
+
+.form > p {
+  padding: 0 var(--form-padding-left);
+
+}
+
+form {
+  margin: 0;
+  border: none;
+}
+fieldset > legend {
+  top: 20px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+
+fieldset {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgb(182, 182, 182);
+  padding: var(--form-padding-left);
+  padding-top: 60px;
+}
+
+
+fieldset div {
+  margin: 10px 20px 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#submit {
+  margin: var(--form-padding-left);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms Practice</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="picture">
+    <img src="assets/luffy.jpg" alt="">
+    <div class="blackbar">
+      <img src="assets/logo.png" alt="">
+    </div>
+    <div class="imagecred">
+      Photo <span>by</span> <a href="https://twitter.com/noonvincent">@noonvincent</a>  <span>on</span>  <a href="https://twitter.com/">Twitter</a>
+    </div>
+  </div>
+  <div class="form">
+    <p>This not a real online service! You knwo you need something lik this in your life to help you realize your deepest dreams. 
+    Sign up Now to get started.</p> 
+    <p>You know you want to.</p>
+    <form action="#">
+
+      <fieldset>
+        <legend>Let's do this!</legend>
+        <div>
+          <label for="firstname">FIRST NAME</label>
+          <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div>
+          <label for="lastname">LAST NAME</label>
+          <input type="text" id="lastname" name="lastname" required>
+        </div>
+        <div>
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" name="email" required>
+        </div>
+        <div>
+          <label for="phone">PHONE NUMBER</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+          <label for="confirm">CONFIRM PASSWORD</label>
+          <input type="password" id="confirm" name="confirm" required>
+        </div>
+      </fieldset>
+      <input type="submit" id="submit" name="submit" value="Create Account">
+    </form>
+    <p>Already have an account? <a href="https://google.com">Log in</a></p>
+    
+
+  </div>
+</body>
+</html>
