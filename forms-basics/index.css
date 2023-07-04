@@ -1,5 +1,5 @@
 :root {
-  --form-padding-left: 12px;
+  --form-padding-left: 24px;
 }
 div, body {
   margin: 0;
@@ -53,9 +53,7 @@ body {
 }
 
 .imagecred a, .imagecred a:visited {
-  a, a:visited {
-    color: white;
-  }
+  color: white;
 }
 
 .imagecred span {
@@ -66,17 +64,23 @@ body {
 
 .form {
   flex: 3;
+  display: flex;
+  flex-direction: column;
   background-color: rgb(238, 238, 238);
 }
 
-.form > p {
+.form-text {
   padding: 0 var(--form-padding-left);
-
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
 form {
   margin: 0;
   border: none;
+  flex: 3;
 }
 fieldset > legend {
   top: 20px;
@@ -111,4 +115,9 @@ fieldset div {
 
 #submit {
   margin: var(--form-padding-left);
+}
+
+form p:last-child {
+  margin: var(--form-padding-left);
+  flex: 1;
 }
