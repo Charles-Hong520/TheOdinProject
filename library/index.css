@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  display: flex;
+}
+
+form {
+  flex: 1;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.library {
+  padding-left: 20px;
+  flex: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.library > div {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.library > div > p{
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+fieldset {
+  margin: 10px 5px;
+}
+
+fieldset > div {
+  display: flex;
+  flex-direction: column;
+}
+#submit {
+  color: black;
+  background-color: steelblue;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
